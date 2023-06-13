@@ -258,6 +258,10 @@ struct PostItem: View
                     {
                         ShareButton(urlToShare: postURL, isShowingButtonText: false)
                     }
+                    else
+                    {
+                        ShareButton(urlToShare: URL(string: post.post.apId)!, isShowingButtonText: false)
+                    }
                 }
 
                 Spacer()
